@@ -1,6 +1,6 @@
 <script setup>
     import { ref } from 'vue'
-    // import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
+    import VueHcaptcha from '@hcaptcha/vue3-hcaptcha';
 
     //init successMessage
     const successMessage = ref('')
@@ -162,6 +162,7 @@
             <div>
                 <p class="text-sm text-gray-600">(<span class="text-red-600">*</span>) Ce champ est obligatoire.</p>
             </div>
+            <vue-hcaptcha sitekey="6Lc_lYEpAAAAAPMwCGNdtfqXD9rxQVXqQjEEYtzH"></vue-hcaptcha>
             <div class="mt-4">
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Envoyer</button>
             </div>
